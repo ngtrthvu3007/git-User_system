@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+</head>
+<body onload="buildListUsers()">
+    <div class="form__user">
+
+      
+
+            <h3>User Information</h3>
+
+            <label>Name</label>
+            <input type="text" id="name">
+            <span id="name__error" class="error"></span>
+            </br>
+
+            <label>User Name</label>
+            <input type="text" id="user__name">
+            <span id="user__name__error" class="error"></span>
+            </br>
+
+            <label>Password</label>
+            <input type="text" id="password">
+            <span id="password__error" class="error"></span>
+            </br>
+
+            <label>Email</label>
+            <input type="text" id="email">
+            <span id="email__error" class="error"></span>
+            </br>
+
+            <label>Phone</label>
+            <input type="text" id="phone">
+            <span id="phone__error" class="error"></span>
+            </br>
+
+            <label></label>
+            </br>
+            <button onclick="saveUser()">Save</button>
+        
+    </div>
+
+    <div class="list__user" id="list__user">
+        <h3>User List</h3>
+        <table id="users__list" width="600px" border="1" cellpadding = '0' cellpadding ='0'>
+            
+        </table>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
