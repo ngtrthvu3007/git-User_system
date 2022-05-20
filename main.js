@@ -5,7 +5,7 @@ function emailIsValid(email){
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 function phoneIsValid(phone){
-    return  /^(0[3579][0-9]{8}|1[89]00[0-9]{4})$/.test(phone);
+    return  /^(0[0-9][0-9]{8}|1[89]00[0-9]{4})$/.test(phone);
 }
 
 
@@ -60,7 +60,7 @@ function saveUser(){
         password = '';
         document.getElementById('password__error').innerHTML = '*Please sign again!';
     }
-    else if(password.trim().length < 8){
+    else if(password.trim().length < 6){
         password = '';
         document.getElementById('password__error').innerHTML = '*Too short, sign again!';
     } 
